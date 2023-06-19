@@ -19,7 +19,7 @@
       >
         <div>
           <img
-            src="/src/assets/project-ss/local-crime.webp"
+            src="../assets/project-ss/local-crime.webp"
             class="overview-project--img"
             alt="Local Crime Checker project screenshot"
           />
@@ -40,7 +40,7 @@
         <div>
           <img
             class="overview-project--img"
-            src="/src/assets/project-ss/book-collection.webp"
+            src="../assets/project-ss/book-collection.webp"
             alt="Book Collection Manager project screenshot"
           />
           <div class="text-lg -mt-32 p-2"></div>
@@ -60,7 +60,7 @@
         <div>
           <img
             class="overview-project--img"
-            src="/src/assets/project-ss/ecoElectronics.webp"
+            src="../assets/project-ss/ecoElectronics.webp"
             alt="ecoElectronics project screenshot"
           />
           <div class="text-lg -mt-32 p-2"></div>
@@ -80,7 +80,7 @@
         <div>
           <img
             class="overview-project--img"
-            src="/src/assets/project-ss/fullstack-forum.webp"
+            src="../assets/project-ss/fullstack-forum.webp"
             alt="Full Stack Forum project screenshot"
           />
           <div class="text-lg -mt-32 p-2"></div>
@@ -100,7 +100,7 @@
         <div>
           <img
             class="overview-project--img"
-            src="/src/assets/project-ss/coach-finder.webp"
+            src="../assets/project-ss/coach-finder.webp"
             alt="Coach Finder project screenshot"
           />
           <div class="text-lg -mt-32 p-2"></div>
@@ -120,7 +120,7 @@
         <div>
           <img
             class="overview-project--img"
-            src="/src/assets/project-ss/portfolio.webp"
+            src="../assets/project-ss/portfolio.webp"
             alt="Portfolio  screenshot"
           />
           <div class="text-lg -mt-32 p-2"></div>
