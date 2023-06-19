@@ -1,4 +1,4 @@
-# Vue tailwind new
+# Portfolio
 
 This is my Portfolio, built using JavaScript, HTML, Vue and Tailwind CSS.
 
