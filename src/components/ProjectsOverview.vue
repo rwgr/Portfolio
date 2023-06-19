@@ -60,7 +60,7 @@
         <div>
           <img
             class="overview-project--img"
-            src="../assets/project-ss/ecoElectronics.webp"
+            src="../assets/project-ss/ecoelectronics.webp"
             alt="ecoElectronics project screenshot"
           />
           <div class="text-lg -mt-32 p-2"></div>
