@@ -2,7 +2,11 @@
 
 This is my Portfolio, built using JavaScript, HTML, Vue and Tailwind CSS.
 
-It has an animated background that was built using Three.js, it can be enabled via the Sidebar and controlled via the controls that are at the top of the main section.
+Unfortunately the animated background doesn doesn't seem to work with the netlify deployment currently.
+
+The animated background that was built using Three.js, it can be enabled via the Sidebar and controlled via the controls that are at the top of the main section.
+
+https://rwgr.netlify.app/
 
 ## Recommended IDE Setup
 
