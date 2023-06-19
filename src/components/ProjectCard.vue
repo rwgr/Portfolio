@@ -17,7 +17,29 @@
             :key="res"
             :src="`src/assets/learning/${res}-logo.svg`"
             class="grayscale h-7 md:h-8 w-7 md:w-8"
-            :title="res"
+            :title="
+              res === 'javascript'
+                ? 'JavaScript'
+                : res === 'html'
+                ? 'HTML5'
+                : res === 'vue'
+                ? 'Vue'
+                : res === 'tailwind'
+                ? 'Tailwind'
+                : res === 'css'
+                ? 'CSS'
+                : res === 'nodejs'
+                ? 'Node.Js'
+                : res === 'threejs'
+                ? 'Three.Js'
+                : res === 'expressjs'
+                ? 'Express'
+                : res === 'mongodb'
+                ? 'MongoDB'
+                : res === 'pug'
+                ? 'pug'
+                : null
+            "
           />
         </div>
         <div class="flex gap-2 items-center -ml-2 sm:ml-0">

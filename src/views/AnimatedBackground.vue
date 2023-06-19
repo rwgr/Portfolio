@@ -66,23 +66,19 @@ export default {
       const sprite1 = textureLoader.load(
         "../src/assets/learning/javascript-logo.svg"
       );
-      const sprite2 = textureLoader.load("../src/assets/learning/CSS-logo.svg");
+      const sprite2 = textureLoader.load("../assets/learning/css-logo.svg");
       const sprite3 = textureLoader.load(
         "../src/assets/learning/html-logo.svg"
       );
-      const sprite4 = textureLoader.load("../src/assets/learning/Vue-logo.svg");
+      const sprite4 = textureLoader.load("../assets/learning/vue-logo.svg");
       const sprite5 = textureLoader.load(
-        "../src/assets/learning/expressjs-logo.svg"
+        "../assets/learning/expressjs-logo.svg"
       );
       const sprite6 = textureLoader.load(
-        "../src/assets/learning/tailwind-logo.svg"
+        "../assets/learning/tailwind-logo.svg"
       );
-      const sprite7 = textureLoader.load(
-        "../src/assets/learning/mongodb-logo.svg"
-      );
-      const sprite8 = textureLoader.load(
-        "../src/assets/learning/nodejs-logo.svg"
-      );
+      const sprite7 = textureLoader.load("../assets/learning/mongodb-logo.svg");
+      const sprite8 = textureLoader.load("../assets/learning/nodejs-logo.svg");
 
       for (let i = 0; i < 10000; i++) {
         const x = 1;
