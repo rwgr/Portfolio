@@ -185,7 +185,6 @@ export default {
 
     function scrollToElement(e) {
       const id = "el-" + e.target.closest("div").id;
-      console.log(id);
       if (id) {
         document.getElementById(id).scrollIntoView({
           behavior: "smooth",

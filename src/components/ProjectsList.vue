@@ -2,67 +2,502 @@
   <div
     class="flex flex-col items-center gap-y-20 w-[95%] mt-20 px-6 ml-6 sm:ml-0"
   >
-    <project-card
-      class="bg-gray-900"
-      prjLink="https://github.com/rwgr/Local-Crime-Checker"
-      ytLink="https://www.youtube.com/watch?v=iwf1tJdDMwc"
-      prjImg="/assets/project-ss/local-crime.webp"
-      prjNo="1"
-      prjName="Local Crime Checker"
-      prj-Desc="Web application utilising the UK Police public crime API.  Allows a user to view crime data for an area, and offers comparisons with previous months or years allowing a user to see trends and changes in crime within the area specified."
-      :prjRes="prj1Res"
-    />
-    <project-card
-      class="bg-[#0f2e29]"
-      prjLink="https://github.com/rwgr/Book-Collection-Manager"
-      ytLink="https://www.youtube.com/watch?v=xIU1O3Cqcw4"
-      prjImg="/assets/project-ss/book-collection.webp"
-      prjNo="2"
-      prjName="Book Collection Manager "
-      prj-Desc="Create Read Update & Delete (CRUD) application designed to simplify the organisation of a user's book collection. Utilising Vue Router for routing, Vuex for state management, Vuelidate for form validation and the Open Library API for adding books via their identifiers."
-      :prjRes="prj2Res"
-    />
-    <project-card
-      class="bg-gray-900"
-      prjLink="https://github.com/rwgr/ecoElectronics"
-      ytLink="https://www.youtube.com/watch?v=M_DW04ho_G4"
-      prjImg="/assets/project-ss/ecoelectronics.webp"
-      prjNo="3"
-      prjName="ecoElectronics Store Front Website"
-      prj-Desc="Mock-up of a store front for a conceptual environmentally friendly online computer retailer using modern web design principles."
-      :prjRes="prj3Res"
-    />
-    <project-card
-      class="bg-[#0f2e29]"
-      prjLink="https://github.com/rwgr/Full-Stack-Forum"
-      ytLink="https://www.youtube.com/watch?v=Q7wpximrd9Q"
-      prjImg="/assets/project-ss/fullstack-forum.webp"
-      prjNo="4"
-      prjName="Full Stack Forum"
-      prj-Desc="A basic full stack forum project. Users can sign-up and login allowing them to create posts and leave comments.  Users can edit and delete their own posts and comments, change their password and view other users' posts and comments."
-      :prjRes="prj4Res"
-    />
-    <project-card
-      class="bg-gray-900"
-      prjLink="https://github.com/rwgr/Coach-Finder"
-      ytLink="https://www.youtube.com/watch?v=Vb4FmRDL3KA"
-      prjImg="/assets/project-ss/coach-finder.webp"
-      prjNo="5"
-      prjName="Coach Finder"
-      prj-Desc="Web application for facilitating contact between coaches advertising their services and their customers. Users can contact any coach via using the in-built messaging system.  A user can also register as a coach, and receive messages themselves. 
-      (This project is a continuation of a tutorial project completed as part of a Udemy course, with additional features added)."
-      :prjRes="prj5Res"
-    />
-    <project-card
-      class="bg-[#0f2e29]"
-      prjLink="https://github.com/rwgr/Portfolio"
-      ytLink="https://www.youtube.com/watch?v=Vb4FmRDL3KA&feature=youtu.be"
-      prjImg="/assets/project-ss/portfolio.webp"
-      prjNo="6"
-      prjName="Portfolio"
-      prj-Desc="This portfolio project, utilises Tailwind CSS for styling and Three.js to create an animated background."
-      :prjRes="prj6Res"
-    />
+    <div
+      class="flex flex-col justify-between h-full rounded-xl text-slate-100 main-border shadow-xl shadow-[#253331] bg-gray-900"
+      id="el-project-1"
+    >
+      <div
+        class="flex flex-col gap-3 justify-evenly p-4 md:p-8"
+        :class="isOdd(1) ? 'z-odd' : 'z-even'"
+      >
+        <span class="uppercase text-xs tracking-widest font-bold"
+          >Project #1</span
+        >
+        <div class="flex justify-between align-middle flex-wrap gap-3">
+          <div class="flex h-10 items-center gap-3 p-0 md:p-2 -ml-2 sm:ml-0">
+            <img
+              src="../assets/learning/html-logo.svg"
+              class="grayscale h-7 md:h-8 w-7 md:w-8"
+              title="HTML5"
+            />
+            <img
+              src="../assets/learning/css-logo.svg"
+              class="grayscale h-7 md:h-8 w-7 md:w-8"
+              title="CSS"
+            />
+            <img
+              src="../assets/learning/javascript-logo.svg"
+              class="grayscale h-7 md:h-8 w-7 md:w-8"
+              title="JavaScript"
+            />
+            <img
+              src="../assets/learning/vue-logo.svg"
+              class="grayscale h-7 md:h-8 w-7 md:w-8"
+              title="Vue"
+            />
+          </div>
+          <div class="flex gap-2 items-center -ml-2 sm:ml-0">
+            <div>
+              <a
+                href="https://www.youtube.com/watch?v=iwf1tJdDMwc"
+                title="View demo on YouTube"
+                target="_blank"
+              >
+                <YoutubeLogo class="hover:bg-[#f00]" />
+              </a>
+            </div>
+            <div>
+              <a
+                href="https://github.com/rwgr/Local-Crime-Checker"
+                title="View project on GitHub"
+                target="_blank"
+              >
+                <GithubLogo
+                  class="hover:fill-zinc-800 dark:hover:fill-gray-900"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="text-xl font-bold mt-2">Local Crime Checker</div>
+        <div class="font-semibold text-sm sm:text-base">
+          Web application utilising the UK Police public crime API. Allows a
+          user to view crime data for an area, and offers comparisons with
+          previous months or years allowing a user to see trends and changes in
+          crime within the area specified.
+        </div>
+      </div>
+      <div
+        class="w-full self-center inline-block z-10 relative rounded-xl -mt-2 md:mt-0 p-2 sm:p-4 md:p-6"
+        :class="isOdd(1) ? 'z-odd-img' : 'z-even-img'"
+      >
+        <img
+          src="../assets/project-ss/local-crime.webp"
+          alt="Project screenshot"
+          class="border-2 border-solid border-[#155b26] rounded-xl cursor-pointer transition-all duration-300 ease-out hover:bg-slate-100 text-center w-full h-full"
+          @mouseover="showImageOverlay"
+          @mouseleave="hideImageOverlay"
+          @click="showFullSize('localcrime')"
+        />
+
+        <div
+          class="absolute top-1/3 right-1/2 -translate-x-1/2 -translate-y-1/2 text-white dark:text-green-500 -z-10 text-xl font-bold flex gap-2 align-middle justify-center h-min w-80 translate-x-1/2 translate-y-1/4 sm:translate-y-1/2 p-2"
+        >
+          <ArrowsPointingOutIcon class="h-10" />
+        </div>
+      </div>
+    </div>
+    <div
+      class="flex flex-col justify-between h-full rounded-xl text-slate-100 main-border shadow-xl shadow-[#253331] bg-[#0f2e29]"
+      id="el-project-2"
+    >
+      <div
+        class="flex flex-col gap-3 justify-evenly p-4 md:p-8"
+        :class="isOdd(2) ? 'z-odd' : 'z-even'"
+      >
+        <span class="uppercase text-xs tracking-widest font-bold"
+          >Project #2</span
+        >
+        <div class="flex justify-between align-middle flex-wrap gap-3">
+          <div class="flex h-10 items-center gap-3 p-0 md:p-2 -ml-2 sm:ml-0">
+            <img
+              src="../assets/learning/html-logo.svg"
+              class="grayscale h-7 md:h-8 w-7 md:w-8"
+              title="HTML5"
+            />
+            <img
+              src="../assets/learning/css-logo.svg"
+              class="grayscale h-7 md:h-8 w-7 md:w-8"
+              title="CSS"
+            />
+            <img
+              src="../assets/learning/javascript-logo.svg"
+              class="grayscale h-7 md:h-8 w-7 md:w-8"
+              title="JavaScript"
+            />
+            <img
+              src="../assets/learning/vue-logo.svg"
+              class="grayscale h-7 md:h-8 w-7 md:w-8"
+              title="Vue"
+            />
+          </div>
+          <div class="flex gap-2 items-center -ml-2 sm:ml-0">
+            <div>
+              <a
+                href="https://www.youtube.com/watch?v=xIU1O3Cqcw4"
+                title="View demo on YouTube"
+                target="_blank"
+              >
+                <YoutubeLogo class="hover:bg-[#f00]" />
+              </a>
+            </div>
+            <div>
+              <a
+                href="https://github.com/rwgr/Book-Collection-Manager"
+                title="View project on GitHub"
+                target="_blank"
+              >
+                <GithubLogo
+                  class="hover:fill-zinc-800 dark:hover:fill-gray-900"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="text-xl font-bold mt-2">Book Collection Manager</div>
+        <div class="font-semibold text-sm sm:text-base">
+          Create Read Update & Delete (CRUD) application designed to simplify
+          the organisation of a user's book collection. Utilising Vue Router for
+          routing, Vuex for state management, Vuelidate for form validation and
+          the Open Library API for adding books via their identifiers.
+        </div>
+      </div>
+      <div
+        class="w-full self-center inline-block z-10 relative rounded-xl -mt-2 md:mt-0 p-2 sm:p-4 md:p-6"
+        :class="isOdd(2) ? 'z-odd-img' : 'z-even-img'"
+      >
+        <img
+          src="../assets/project-ss/book-collection.webp"
+          alt="Project screenshot"
+          class="border-2 border-solid border-[#155b26] rounded-xl cursor-pointer transition-all duration-300 ease-out hover:bg-slate-100 text-center w-full h-full"
+          @mouseover="showImageOverlay"
+          @mouseleave="hideImageOverlay"
+          @click="showFullSize('bookcollection')"
+        />
+
+        <div
+          class="absolute top-1/3 right-1/2 -translate-x-1/2 -translate-y-1/2 text-white dark:text-green-500 -z-10 text-xl font-bold flex gap-2 align-middle justify-center h-min w-80 translate-x-1/2 translate-y-1/4 sm:translate-y-1/2 p-2"
+        >
+          <ArrowsPointingOutIcon class="h-10" />
+        </div>
+      </div>
+    </div>
+    <div
+      class="flex flex-col justify-between h-full rounded-xl text-slate-100 main-border shadow-xl shadow-[#253331] bg-gray-900"
+      id="el-project-3"
+    >
+      <div
+        class="flex flex-col gap-3 justify-evenly p-4 md:p-8"
+        :class="isOdd(3) ? 'z-odd' : 'z-even'"
+      >
+        <span class="uppercase text-xs tracking-widest font-bold"
+          >Project #3</span
+        >
+        <div class="flex justify-between align-middle flex-wrap gap-3">
+          <div class="flex h-10 items-center gap-3 p-0 md:p-2 -ml-2 sm:ml-0">
+            <img
+              src="../assets/learning/html-logo.svg"
+              class="grayscale h-7 md:h-8 w-7 md:w-8"
+              title="HTML5"
+            />
+            <img
+              src="../assets/learning/css-logo.svg"
+              class="grayscale h-7 md:h-8 w-7 md:w-8"
+              title="CSS"
+            />
+            <img
+              src="../assets/learning/javascript-logo.svg"
+              class="grayscale h-7 md:h-8 w-7 md:w-8"
+              title="JavaScript"
+            />
+            <img
+              src="../assets/learning/vue-logo.svg"
+              class="grayscale h-7 md:h-8 w-7 md:w-8"
+              title="Vue"
+            />
+          </div>
+          <div class="flex gap-2 items-center -ml-2 sm:ml-0">
+            <div>
+              <a
+                href="https://www.youtube.com/watch?v=M_DW04ho_G4"
+                title="View demo on YouTube"
+                target="_blank"
+              >
+                <YoutubeLogo class="hover:bg-[#f00]" />
+              </a>
+            </div>
+            <div>
+              <a
+                href="https://github.com/rwgr/ecoElectronics"
+                title="View project on GitHub"
+                target="_blank"
+              >
+                <GithubLogo
+                  class="hover:fill-zinc-800 dark:hover:fill-gray-900"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="text-xl font-bold mt-2">
+          ecoElectronics Store Front Website
+        </div>
+        <div class="font-semibold text-sm sm:text-base">
+          Mock-up of a store front for a conceptual environmentally friendly
+          online computer retailer using modern web design principles.
+        </div>
+      </div>
+      <div
+        class="w-full self-center inline-block z-10 relative rounded-xl -mt-2 md:mt-0 p-2 sm:p-4 md:p-6"
+        :class="isOdd(3) ? 'z-odd-img' : 'z-even-img'"
+      >
+        <img
+          src="../assets/project-ss/ecoelectronics.webp"
+          alt="Project screenshot"
+          class="border-2 border-solid border-[#155b26] rounded-xl cursor-pointer transition-all duration-300 ease-out hover:bg-slate-100 text-center w-full h-full"
+          @mouseover="showImageOverlay"
+          @mouseleave="hideImageOverlay"
+          @click="showFullSize('ecoelectronics')"
+        />
+
+        <div
+          class="absolute top-1/3 right-1/2 -translate-x-1/2 -translate-y-1/2 text-white dark:text-green-500 -z-10 text-xl font-bold flex gap-2 align-middle justify-center h-min w-80 translate-x-1/2 translate-y-1/4 sm:translate-y-1/2 p-2"
+        >
+          <ArrowsPointingOutIcon class="h-10" />
+        </div>
+      </div>
+    </div>
+    <div
+      class="flex flex-col justify-between h-full rounded-xl text-slate-100 main-border shadow-xl shadow-[#253331] bg-[#0f2e29]"
+      id="el-project-4"
+    >
+      <div
+        class="flex flex-col gap-3 justify-evenly p-4 md:p-8"
+        :class="isOdd(4) ? 'z-odd' : 'z-even'"
+      >
+        <span class="uppercase text-xs tracking-widest font-bold"
+          >Project #4</span
+        >
+        <div class="flex justify-between align-middle flex-wrap gap-3">
+          <div class="flex h-10 items-center gap-3 p-0 md:p-2 -ml-2 sm:ml-0">
+            <img
+              src="../assets/learning/nodejs-logo.svg"
+              class="grayscale h-7 md:h-8 w-7 md:w-8"
+              title="Node.Js"
+            />
+            <img
+              src="../assets/learning/expressjs-logo.svg"
+              class="grayscale h-7 md:h-8 w-7 md:w-8"
+              title="Express"
+            />
+            <img
+              src="../assets/learning/mongodb-logo.svg"
+              class="grayscale h-7 md:h-8 w-7 md:w-8"
+              title="MongoDB"
+            />
+            <img
+              src="../assets/learning/pug-logo.svg"
+              class="grayscale h-7 md:h-8 w-7 md:w-8"
+              title="Pug"
+            />
+          </div>
+          <div class="flex gap-2 items-center -ml-2 sm:ml-0">
+            <div>
+              <a
+                href="https://www.youtube.com/watch?v=Q7wpximrd9Q"
+                title="View demo on YouTube"
+                target="_blank"
+              >
+                <YoutubeLogo class="hover:bg-[#f00]" />
+              </a>
+            </div>
+            <div>
+              <a
+                href="https://github.com/rwgr/Full-Stack-Forum"
+                title="View project on GitHub"
+                target="_blank"
+              >
+                <GithubLogo
+                  class="hover:fill-zinc-800 dark:hover:fill-gray-900"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="text-xl font-bold mt-2">Full Stack Forum</div>
+        <div class="font-semibold text-sm sm:text-base">
+          A basic full stack forum project. Users can sign-up and login allowing
+          them to create posts and leave comments. Users can edit and delete
+          their own posts and comments, change their password and view other
+          users' posts and comments.
+        </div>
+      </div>
+      <div
+        class="w-full self-center inline-block z-10 relative rounded-xl -mt-2 md:mt-0 p-2 sm:p-4 md:p-6"
+        :class="isOdd(4) ? 'z-odd-img' : 'z-even-img'"
+      >
+        <img
+          src="../assets/project-ss/fullstack-forum.webp"
+          alt="Project screenshot"
+          class="border-2 border-solid border-[#155b26] rounded-xl cursor-pointer transition-all duration-300 ease-out hover:bg-slate-100 text-center w-full h-full"
+          @mouseover="showImageOverlay"
+          @mouseleave="hideImageOverlay"
+          @click="showFullSize('fullstackforum')"
+        />
+
+        <div
+          class="absolute top-1/3 right-1/2 -translate-x-1/2 -translate-y-1/2 text-white dark:text-green-500 -z-10 text-xl font-bold flex gap-2 align-middle justify-center h-min w-80 translate-x-1/2 translate-y-1/4 sm:translate-y-1/2 p-2"
+        >
+          <ArrowsPointingOutIcon class="h-10" />
+        </div>
+      </div>
+    </div>
+    <div
+      class="flex flex-col justify-between h-full rounded-xl text-slate-100 main-border shadow-xl shadow-[#253331] bg-gray-900"
+      id="el-project-5"
+    >
+      <div
+        class="flex flex-col gap-3 justify-evenly p-4 md:p-8"
+        :class="isOdd(5) ? 'z-odd' : 'z-even'"
+      >
+        <span class="uppercase text-xs tracking-widest font-bold"
+          >Project #5</span
+        >
+        <div class="flex justify-between align-middle flex-wrap gap-3">
+          <div class="flex h-10 items-center gap-3 p-0 md:p-2 -ml-2 sm:ml-0">
+            <img
+              src="../assets/learning/html-logo.svg"
+              class="grayscale h-7 md:h-8 w-7 md:w-8"
+              title="HTML5"
+            />
+            <img
+              src="../assets/learning/css-logo.svg"
+              class="grayscale h-7 md:h-8 w-7 md:w-8"
+              title="CSS"
+            />
+            <img
+              src="../assets/learning/javascript-logo.svg"
+              class="grayscale h-7 md:h-8 w-7 md:w-8"
+              title="JavaScript"
+            />
+            <img
+              src="../assets/learning/vue-logo.svg"
+              class="grayscale h-7 md:h-8 w-7 md:w-8"
+              title="Vue"
+            />
+          </div>
+          <div class="flex gap-2 items-center -ml-2 sm:ml-0">
+            <div>
+              <a
+                href="https://www.youtube.com/watch?v=Vb4FmRDL3KA"
+                title="View demo on YouTube"
+                target="_blank"
+              >
+                <YoutubeLogo class="hover:bg-[#f00]" />
+              </a>
+            </div>
+            <div>
+              <a
+                href="https://github.com/rwgr/Coach-Finder"
+                title="View project on GitHub"
+                target="_blank"
+              >
+                <GithubLogo
+                  class="hover:fill-zinc-800 dark:hover:fill-gray-900"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="text-xl font-bold mt-2">Coach Finder</div>
+        <div class="font-semibold text-sm sm:text-base">
+          Web application for facilitating contact between coaches advertising
+          their services and their customers. Users can contact any coach via
+          using the in-built messaging system. A user can also register as a
+          coach, and receive messages themselves. (This project is a
+          continuation of a tutorial project completed as part of a Udemy
+          course, with additional features added).
+        </div>
+      </div>
+      <div
+        class="w-full self-center inline-block z-10 relative rounded-xl -mt-2 md:mt-0 p-2 sm:p-4 md:p-6"
+        :class="isOdd(5) ? 'z-odd-img' : 'z-even-img'"
+      >
+        <img
+          src="../assets/project-ss/coach-finder.webp"
+          alt="Project screenshot"
+          class="border-2 border-solid border-[#155b26] rounded-xl cursor-pointer transition-all duration-300 ease-out hover:bg-slate-100 text-center w-full h-full"
+          @mouseover="showImageOverlay"
+          @mouseleave="hideImageOverlay"
+          @click="showFullSize('coachfinder')"
+        />
+
+        <div
+          class="absolute top-1/3 right-1/2 -translate-x-1/2 -translate-y-1/2 text-white dark:text-green-500 -z-10 text-xl font-bold flex gap-2 align-middle justify-center h-min w-80 translate-x-1/2 translate-y-1/4 sm:translate-y-1/2 p-2"
+        >
+          <ArrowsPointingOutIcon class="h-10" />
+        </div>
+      </div>
+    </div>
+    <div
+      class="flex flex-col justify-between h-full rounded-xl text-slate-100 main-border shadow-xl shadow-[#253331] bg-[#0f2e29]"
+      id="el-project-6"
+    >
+      <div
+        class="flex flex-col gap-3 justify-evenly p-4 md:p-8"
+        :class="isOdd(6) ? 'z-odd' : 'z-even'"
+      >
+        <span class="uppercase text-xs tracking-widest font-bold"
+          >Project #6</span
+        >
+        <div class="flex justify-between align-middle flex-wrap gap-3">
+          <div class="flex h-10 items-center gap-3 p-0 md:p-2 -ml-2 sm:ml-0">
+            <img
+              src="../assets/learning/vue-logo.svg"
+              class="grayscale h-7 md:h-8 w-7 md:w-8"
+              title="Vue"
+            />
+            <img
+              src="../assets/learning/tailwind-logo.svg"
+              class="grayscale h-7 md:h-8 w-7 md:w-8"
+              title="Tailwind CSS"
+            />
+            <img
+              src="../assets/learning/threejs-logo.svg"
+              class="grayscale h-7 md:h-8 w-7 md:w-8"
+              title="Three.Js"
+            />
+          </div>
+          <div class="flex gap-2 items-center -ml-2 sm:ml-0">
+            <div>
+              <a
+                href="https://github.com/rwgr/Portfolio"
+                title="View project on GitHub"
+                target="_blank"
+              >
+                <GithubLogo
+                  class="hover:fill-zinc-800 dark:hover:fill-gray-900"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="text-xl font-bold mt-2">Portfolio</div>
+        <div class="font-semibold text-sm sm:text-base">
+          This portfolio project, utilises Tailwind CSS for styling and Three.js
+          to create an animated background.
+        </div>
+      </div>
+      <div
+        class="w-full self-center inline-block z-10 relative rounded-xl -mt-2 md:mt-0 p-2 sm:p-4 md:p-6"
+        :class="isOdd(6) ? 'z-odd-img' : 'z-even-img'"
+      >
+        <img
+          src="../assets/project-ss/portfolio.webp"
+          alt="Project screenshot"
+          class="border-2 border-solid border-[#155b26] rounded-xl cursor-pointer transition-all duration-300 ease-out hover:bg-slate-100 text-center w-full h-full"
+          @mouseover="showImageOverlay"
+          @mouseleave="hideImageOverlay"
+          @click="showFullSize('portfolio')"
+        />
+
+        <div
+          class="absolute top-1/3 right-1/2 -translate-x-1/2 -translate-y-1/2 text-white dark:text-green-500 -z-10 text-xl font-bold flex gap-2 align-middle justify-center h-min w-80 translate-x-1/2 translate-y-1/4 sm:translate-y-1/2 p-2"
+        >
+          <ArrowsPointingOutIcon class="h-10" />
+        </div>
+      </div>
+    </div>
   </div>
   <div
     id="border4"
@@ -72,13 +507,20 @@
 
 <script>
 import ProjectCard from "./ProjectCard.vue";
+import { ArrowsPointingOutIcon } from "@heroicons/vue/24/solid";
+import GithubLogo from "./GithubLogo.vue";
+import YoutubeLogo from "./YoutubeLogo.vue";
 import { onMounted } from "vue";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger.js";
 import { ref } from "vue";
+import store from "../store";
 export default {
   components: {
     ProjectCard,
+    ArrowsPointingOutIcon,
+    GithubLogo,
+    YoutubeLogo,
   },
   data() {
     return {
@@ -92,12 +534,22 @@ export default {
   },
   setup() {
     const loading = ref(true);
+
     function showImageOverlay(e) {
       e.target.classList.add("show-overlay");
     }
 
     function hideImageOverlay(e) {
       e.target.classList.remove("show-overlay");
+    }
+
+    function isOdd(num) {
+      return num % 2 !== 0;
+    }
+
+    function showFullSize(prjImg) {
+
+      store.dispatch("showFullSize", prjImg);
     }
 
     async function scrollAnimation() {
@@ -193,7 +645,7 @@ export default {
       scrollAnimation();
     });
 
-    return { showImageOverlay, hideImageOverlay, loading };
+    return { showImageOverlay, hideImageOverlay, loading, isOdd, showFullSize };
   },
 };
 </script>

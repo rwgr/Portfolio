@@ -14,7 +14,7 @@ const store = createStore({
       resetPositioning: false,
       postProcessing: null,
       webGLAvailable: true,
-      showFullSize: null,
+      showFullSize: "",
     };
   },
   mutations,

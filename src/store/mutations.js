@@ -28,6 +28,7 @@ export default {
   },
   showFullSize(state, payload) {
     state.showFullSize = payload;
+    console.log(state.showFullSize);
   },
   closeFullSize(state) {
     state.showFullSize = null;

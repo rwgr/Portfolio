@@ -83,7 +83,7 @@
           <div class="flex gap-4" title="View full-size screenshot">
             <ArrowsPointingOutIcon
               class="h-8 infoIcon"
-              @click="showFullSize('tutorial-findcoach')"
+              @click="showFullSize('tutorialcoach')"
             />
             <div>
               <a
@@ -114,7 +114,7 @@
           <div class="flex gap-4" title="View full-size screenshot">
             <ArrowsPointingOutIcon
               class="h-8 infoIcon"
-              @click="showFullSize('tutorial-natours')"
+              @click="showFullSize('tutorialnatours')"
             />
             <div>
               <a
@@ -146,7 +146,7 @@
           <div class="flex gap-4" title="View full-size screenshot">
             <ArrowsPointingOutIcon
               class="h-8 infoIcon"
-              @click="showFullSize('tutorial-forkify')"
+              @click="showFullSize('tutorialforkify')"
             />
             <div>
               <a
@@ -177,8 +177,9 @@
           <div class="flex gap-4" title="View full-size screenshot">
             <ArrowsPointingOutIcon
               class="h-8 infoIcon"
-              @click="showFullSize('tutorial-omnifood')"
+              @click="showFullSize('tutorialomnifood')"
             />
+
             <div>
               <a
                 href="https://github.com/rwgr/Tutorial-Omnifood"
@@ -225,8 +226,7 @@ export default {
     function activateTutorial(number) {
       store.dispatch("activateTutorial", number);
     }
-    function showFullSize(prj) {
-      const prjImg = `src/assets/project-ss/${prj}.png`;
+    function showFullSize(prjImg) {
       store.dispatch("showFullSize", prjImg);
     }
     return {
