@@ -20,7 +20,7 @@
       >
         <h3 class="text-center font-semibold">Find A Coach</h3>
         <img
-          src="src/assets/project-ss/tutorial-findcoach.webp"
+          src="/src/assets/project-ss/tutorial-findcoach.webp"
           alt="Find A Coach tutorial screenshot"
           class="w-full h-full transform transition-all duration-300 ease-linear"
           :class="activeTutorial === 1 ? 'activeImage' : 'notActiveImage'"
@@ -33,7 +33,7 @@
       >
         <h3 class="text-center font-semibold">Natours</h3>
         <img
-          src="src/assets/project-ss/tutorial-natours.webp"
+          src="/src/assets/project-ss/tutorial-natours.webp"
           alt="Natours tutorial screenshot"
           class="w-full h-full transform transition-all duration-300 ease-linear"
           :class="activeTutorial === 2 ? 'activeImage' : 'notActiveImage'"
@@ -46,7 +46,7 @@
       >
         <h3 class="text-center font-semibold">Forkify</h3>
         <img
-          src="src/assets/project-ss/tutorial-forkify.webp"
+          src="/src/assets/project-ss/tutorial-forkify.webp"
           alt="Forkify tutorial screenshot"
           class="w-full h-full transform transition-all duration-300 ease-linear"
           :class="activeTutorial === 3 ? 'activeImage' : 'notActiveImage'"
@@ -59,7 +59,7 @@
       >
         <h3 class="text-center font-semibold">Omnifood</h3>
         <img
-          src="src/assets/project-ss/tutorial-omnifood.webp"
+          src="/src/assets/project-ss/tutorial-omnifood.webp"
           alt="Omnifood tutorial screenshot"
           class="w-full h-full transform transition-all duration-300 ease-linear"
           :class="activeTutorial === 4 ? 'activeImage' : 'notActiveImage'"
