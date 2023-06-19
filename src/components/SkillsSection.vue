@@ -12,7 +12,7 @@
       <div class="learning-grid text-xs sm:text-base pr-1">JavaScript</div>
       <div class="learning-grid text-xs sm:text-base pl-2">Vue</div>
       <img
-        src="../assets/learning/html5-logo.svg"
+        src="../assets/learning/html-logo.svg"
         class="grayscale h-10 sm:h-12 w-10 sm:w-12 justify-self-center learning-grid"
         title="HTML"
         alt="HTML logo"

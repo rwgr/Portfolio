@@ -64,24 +64,24 @@ export default {
       const textureLoader = new THREE.TextureLoader();
 
       const sprite1 = textureLoader.load(
-        "../src/assets/learning/JavaScript-logo.svg"
+        "../src/assets/learning/javascript-logo.svg"
       );
       const sprite2 = textureLoader.load("../src/assets/learning/CSS-logo.svg");
       const sprite3 = textureLoader.load(
-        "../src/assets/learning/HTML5-logo.svg"
+        "../src/assets/learning/html-logo.svg"
       );
       const sprite4 = textureLoader.load("../src/assets/learning/Vue-logo.svg");
       const sprite5 = textureLoader.load(
-        "../src/assets/learning/ExpressJs-logo.svg"
+        "../src/assets/learning/expressjs-logo.svg"
       );
       const sprite6 = textureLoader.load(
-        "../src/assets/learning/Tailwind-logo.svg"
+        "../src/assets/learning/tailwind-logo.svg"
       );
       const sprite7 = textureLoader.load(
-        "../src/assets/learning/MongoDB-logo.svg"
+        "../src/assets/learning/mongodb-logo.svg"
       );
       const sprite8 = textureLoader.load(
-        "../src/assets/learning/NodeJs-logo.svg"
+        "../src/assets/learning/nodejs-logo.svg"
       );
 
       for (let i = 0; i < 10000; i++) {
