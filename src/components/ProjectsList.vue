@@ -506,7 +506,6 @@
 </template>
 
 <script>
-import ProjectCard from "./ProjectCard.vue";
 import { ArrowsPointingOutIcon } from "@heroicons/vue/24/solid";
 import GithubLogo from "./GithubLogo.vue";
 import YoutubeLogo from "./YoutubeLogo.vue";
@@ -517,7 +516,6 @@ import { ref } from "vue";
 import store from "../store";
 export default {
   components: {
-    ProjectCard,
     ArrowsPointingOutIcon,
     GithubLogo,
     YoutubeLogo,
@@ -548,7 +546,6 @@ export default {
     }
 
     function showFullSize(prjImg) {
-
       store.dispatch("showFullSize", prjImg);
     }
 
