@@ -15,7 +15,7 @@
           <img
             v-for="res in prjRes"
             :key="res"
-            :src="`/src/assets/learning/${res}-logo.svg`"
+            :src="`/assets/learning/${res}-logo.svg`"
             class="grayscale h-7 md:h-8 w-7 md:w-8"
             :title="
               res === 'javascript'
