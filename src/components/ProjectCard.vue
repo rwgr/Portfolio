@@ -15,7 +15,7 @@
           <img
             v-for="res in prjRes"
             :key="res"
-            :src="`../src/assets/learning/${res}-logo.svg`"
+            :src="`/src/assets/learning/${res}-logo.svg`"
             class="grayscale h-7 md:h-8 w-7 md:w-8"
             :title="
               res === 'javascript'
@@ -71,7 +71,7 @@
       :class="isOdd(prjNo) ? 'z-odd-img' : 'z-even-img'"
     >
       <img
-        :src="`../${prjImg}`"
+        :src="prjImg"
         alt="Project screenshot"
         class="border-2 border-solid border-[#155b26] rounded-xl cursor-pointer transition-all duration-300 ease-out hover:bg-slate-100 text-center w-full h-full"
         @mouseover="showImageOverlay"
