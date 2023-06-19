@@ -12,25 +12,25 @@
       <div class="learning-grid text-xs sm:text-base pr-1">JavaScript</div>
       <div class="learning-grid text-xs sm:text-base pl-2">Vue</div>
       <img
-        src="../assets/learning/HTML5-logo.svg"
+        src="../assets/learning/html5-logo.svg"
         class="grayscale h-10 sm:h-12 w-10 sm:w-12 justify-self-center learning-grid"
         title="HTML"
         alt="HTML logo"
       />
       <img
-        src="../assets/learning/CSS-logo.svg"
+        src="../assets/learning/css-logo.svg"
         class="grayscale h-10 sm:h-12 w-10 sm:w-12 justify-self-center learning-grid"
         title="CSS"
         alt="CSS logo"
       />
       <img
-        src="../assets/learning/JavaScript-logo.svg"
+        src="../assets/learning/javascript-logo.svg"
         class="grayscale h-10 sm:h-12 w-10 sm:w-12 justify-self-center learning-grid"
         title="JavaScript"
         alt="JavaScript logo"
       />
       <img
-        src="../assets/learning/Vue-logo.svg"
+        src="../assets/learning/vue-logo.svg"
         class="grayscale h-10 sm:h-12 w-10 sm:w-12 justify-self-center learning-grid"
         title="Vue"
         alt="Vue logo"
@@ -41,19 +41,19 @@
 
       <div class="mt-2 learning-grid text-xs sm:text-base">Sass</div>
       <img
-        src="../assets/learning/NodeJs-logo.svg"
+        src="../assets/learning/nodejs-logo.svg"
         class="grayscale h-10 sm:h-12 w-10 sm:w-12 justify-self-center learning-grid"
         title="Node.js"
         alt="Node.js logo"
       />
       <img
-        src="../assets/learning/ExpressJs-logo.svg"
+        src="../assets/learning/expressjs-logo.svg"
         class="grayscale h-10 sm:h-12 w-10 sm:w-12 justify-self-center learning-grid"
         title="Express.js"
         alt="Express.js logo"
       />
       <img
-        src="../assets/learning/MongoDB-logo.svg"
+        src="../assets/learning/mongodb-logo.svg"
         class="grayscale h-10 sm:h-12 w-10 sm:w-12 justify-self-center learning-grid"
         title="MongoDB"
         alt="MongoDB logo"
@@ -71,7 +71,7 @@
       <div class="mt-2 learning-grid text-xs sm:text-base">Tailwind</div>
 
       <img
-        src="../assets/learning/React-logo.svg"
+        src="../assets/learning/react-logo.svg"
         class="grayscale h-10 sm:h-12 w-10 sm:w-12 justify-self-center learning-grid"
         title="React"
         alt="React logo"
@@ -83,13 +83,13 @@
         alt="Three.js logo"
       />
       <img
-        src="../assets/learning/Vitejs-logo.svg"
+        src="../assets/learning/vitejs-logo.svg"
         class="grayscale h-10 sm:h-12 w-10 sm:w-12 justify-self-center learning-grid"
         title="Vite"
         alt="Vite logo"
       />
       <img
-        src="../assets/learning/Tailwind-logo.svg"
+        src="../assets/learning/tailwind-logo.svg"
         class="grayscale h-10 sm:h-12 w-10 sm:w-12 justify-self-center learning-grid"
         title="Tailwind"
         alt="Tailwind logo"
