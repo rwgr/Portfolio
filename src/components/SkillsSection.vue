@@ -18,7 +18,7 @@
         alt="HTML logo"
       />
       <img
-        src="../assets/learning/html-logo.svg"
+        src="../assets/learning/css-logo.svg"
         class="grayscale h-10 sm:h-12 w-10 sm:w-12 justify-self-center learning-grid"
         title="CSS"
         alt="CSS logo"
