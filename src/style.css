@@ -1,0 +1,163 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .light-background {
+    @apply bg-stone-100;
+  }
+
+  .light-primary {
+    @apply bg-stone-600;
+  }
+
+  .light-secondary {
+    @apply bg-stone-800;
+  }
+
+  .dark-background {
+    @apply bg-gray-700;
+  }
+
+  .dark-primary {
+    @apply bg-gray-800;
+  }
+  .dark-secondary {
+    @apply bg-gray-900;
+  }
+
+  .highlight {
+    @apply bg-[#22493d];
+  }
+
+  .gradient-learning {
+    @apply bg-gradient-to-b from-[#133a33] via-[#051c1d] to-[#111c24];
+  }
+
+  .gradient-myinfo {
+    @apply bg-gradient-to-tl from-[#09372e] via-[#105342] to-[#2b785a];
+  }
+
+  .light-background {
+    @apply bg-gradient-to-r from-green-400 to-green-800;
+  }
+
+  .nice-green {
+    @apply bg-[#0f2e29];
+  }
+
+  .small-border {
+    @apply border-2 border-solid border-[#155b26] dark:border-green-500;
+  }
+
+  /* SIDEBAR */
+
+  .sidebar-icon {
+    @apply relative flex items-center justify-center h-12  w-12 mt-2 mb-2 mx-auto p-1 rounded-3xl hover:rounded-xl transition-all duration-300 ease-linear bg-gray-900
+    text-slate-100
+    hover:bg-slate-100 hover:text-gray-900  cursor-pointer
+    dark:bg-gray-800 
+    dark:text-green-500
+    dark:hover:bg-green-500
+    dark:hover:text-gray-800;
+  }
+
+  .sidebar-tooltip {
+    @apply absolute w-auto p-2 m-2 min-w-max right-14 rounded-md shadow-md  text-xs font-bold transition-all duration-100 scale-0 origin-left text-slate-100 bg-[#071825] dark:bg-gray-900;
+  }
+
+  .controls-btn {
+    @apply cursor-pointer p-0.5 w-6 rounded-xl h-6 hover:bg-gray-900 hover:text-slate-100 transition-all ease-linear duration-300;
+  }
+
+  /* MYINFOSECTION */
+
+  .hide-section {
+    @apply hidden;
+  }
+
+  .section-enter {
+    @apply visible;
+  }
+
+  .infoIcon {
+    @apply rounded-md cursor-pointer transition-all duration-300 ease-linear p-0.5 hover:bg-slate-100
+    hover:text-zinc-600;
+  }
+
+  /* PROJECTSVIEW */
+
+  .overview-project {
+    @apply flex flex-col justify-between bg-[#0f2e29] shadow-lg p-2 rounded-xl hover:rounded-none transition-all duration-100 ease-linear cursor-pointer hover:border-2 hover:bg-gray-900 hover:shadow-xl hover:p-2.5 h-52 lg:h-52 md:h-56 ml-2 md:ml-0 text-sm sm:text-base;
+  }
+
+  .overview-project--img {
+    @apply rounded-xl h-32 w-52;
+  }
+  .overview-project--no {
+    @apply text-sm pr-1;
+  }
+
+  .z-odd {
+    @apply col-start-2;
+  }
+
+  .z-even {
+    @apply col-start-1 row-start-1;
+  }
+
+  .z-odd-img {
+    @apply hover:-translate-y-3  transition-all duration-300 ease-out;
+  }
+  .z-even-img {
+    @apply hover:-translate-y-3  transition-all duration-300 ease-out;
+  }
+
+  .show-overlay {
+    @apply opacity-20 -z-20;
+  }
+
+  /* TutorialProjectsView, active tutorial styles */
+  .activeContainer {
+    @apply border-slate-100  scale-110 sm:scale-90 md:scale-105 lg:scale-125 z-10 bg-zinc-900;
+  }
+
+  .notActiveContainer {
+    @apply border-gray-900 text-sm scale-100 sm:scale-75 md:scale-100;
+  }
+
+  .notActiveImage {
+    @apply opacity-70;
+  }
+
+  .show {
+    opacity: 100;
+  }
+
+  .paused {
+    @apply bg-gray-900;
+  }
+
+  .fade-enter-active,
+  .fade-leave-active {
+    transition: opacity 0.5s;
+  }
+
+  .fade-enter,
+  .fade-leave-to {
+    opacity: 0;
+  }
+
+  .fade-appear {
+    opacity: 0;
+  }
+
+  .fade-appear-active {
+    transition: opacity 0.5s;
+  }
+
+  .fade-appear-active,
+  .fade-appear-to {
+    opacity: 1;
+  }
+}
