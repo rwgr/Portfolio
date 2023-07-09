@@ -18,6 +18,15 @@ import { BokehPass } from "three/addons/postprocessing/BokehPass.js";
 import { useStore } from "vuex";
 import { computed } from "vue";
 
+import logoJavascript from "@/assets/learning/javascript-logo.svg";
+import logoCss from "@/assets/learning/css-logo.svg";
+import logoHtml from "@/assets/learning/html-logo.svg";
+import logoVue from "@/assets/learning/vue-logo.svg";
+import logoExpressjs from "@/assets/learning/expressjs-logo.svg";
+import logoTailwind from "@/assets/learning/tailwind-logo.svg";
+import logoMongodb from "@/assets/learning/mongodb-logo.svg";
+import logoNodejs from "@/assets/learning/nodejs-logo.svg";
+
 export default {
   components: {},
   setup() {
@@ -38,7 +47,6 @@ export default {
     let geometry = ref(null);
     let composer = ref(null);
     let afterimagePass = ref(null);
-    // let stats = ref(null);
 
     let mouseX = 0,
       mouseY = 0;
@@ -56,29 +64,20 @@ export default {
       camera.position.z = 100;
 
       scene = new THREE.Scene();
-      // scene.fog = new THREE.FogExp2(0x000000, 0.0008);
 
       geometry = new THREE.BufferGeometry();
       const vertices = [];
 
       const textureLoader = new THREE.TextureLoader();
 
-      const sprite1 = textureLoader.load(
-        "../src/assets/learning/javascript-logo.svg"
-      );
-      const sprite2 = textureLoader.load("../assets/learning/css-logo.svg");
-      const sprite3 = textureLoader.load(
-        "../src/assets/learning/html-logo.svg"
-      );
-      const sprite4 = textureLoader.load("../assets/learning/vue-logo.svg");
-      const sprite5 = textureLoader.load(
-        "../assets/learning/expressjs-logo.svg"
-      );
-      const sprite6 = textureLoader.load(
-        "../assets/learning/tailwind-logo.svg"
-      );
-      const sprite7 = textureLoader.load("../assets/learning/mongodb-logo.svg");
-      const sprite8 = textureLoader.load("../assets/learning/nodejs-logo.svg");
+      const sprite1 = textureLoader.load(logoJavascript);
+      const sprite2 = textureLoader.load(logoCss);
+      const sprite3 = textureLoader.load(logoHtml);
+      const sprite4 = textureLoader.load(logoVue);
+      const sprite5 = textureLoader.load(logoExpressjs);
+      const sprite6 = textureLoader.load(logoTailwind);
+      const sprite7 = textureLoader.load(logoMongodb);
+      const sprite8 = textureLoader.load(logoNodejs);
 
       for (let i = 0; i < 10000; i++) {
         const x = 1;
