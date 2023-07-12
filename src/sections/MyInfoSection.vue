@@ -55,7 +55,7 @@
 import { EnvelopeIcon } from "@heroicons/vue/24/solid";
 import { UserCircleIcon } from "@heroicons/vue/24/solid";
 import { MapPinIcon } from "@heroicons/vue/24/solid";
-import GithubLogo from "./GithubLogo.vue";
+import GithubLogo from "../components/GithubLogo.vue";
 
 export default {
   components: {

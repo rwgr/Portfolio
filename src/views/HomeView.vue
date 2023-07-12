@@ -23,7 +23,7 @@
         <LearningList />
       </div>
       <transition name="fade" appear>
-        <FullSizePhotoView
+        <FullSizePhoto
           class="transition-all ease-out duration-700"
           v-if="showFullSize"
         />
@@ -35,21 +35,21 @@
 <script>
 import { useStore } from "vuex";
 import { computed } from "vue";
-import MyInfoSection from "../components/MyInfoSection.vue";
-import SideBar from "../components/SideBar.vue";
-import LearningList from "../components/LearningList.vue";
+import MyInfoSection from "../sections/MyInfoSection.vue";
+import SideBar from "../sections/SideBar.vue";
+import LearningList from "../sections/LearningList.vue";
 import { onMounted } from "vue";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger.js";
-import ProjectsList from "../components/ProjectsList.vue";
-import TutorialProjects from "../components/TutorialProjects.vue";
-import ProjectsOverview from "../components/ProjectsOverview.vue";
-import ContactSection from "../components/ContactSection.vue";
+import ProjectsList from "../sections/ProjectsList.vue";
+import TutorialProjects from "../sections/TutorialProjects.vue";
+import ProjectsOverview from "../sections/ProjectsOverview.vue";
+import ContactSection from "../sections/ContactSection.vue";
 
-import BackgroundControls from "../components/BackgroundControls.vue";
-import IntroSection from "../components/IntroSection.vue";
-import SkillsSection from "../components/SkillsSection.vue";
-import FullSizePhotoView from "../components/FullsizePhotoView.vue";
+import BackgroundControls from "../sections/BackgroundControls.vue";
+import IntroSection from "../sections/IntroSection.vue";
+import SkillsSection from "../sections/SkillsSection.vue";
+import FullSizePhoto from "../components/FullsizePhoto.vue";
 
 export default {
   components: {
@@ -59,12 +59,11 @@ export default {
     ProjectsList,
     TutorialProjects,
     ProjectsOverview,
-
     ContactSection,
     BackgroundControls,
     IntroSection,
     SkillsSection,
-    FullSizePhotoView,
+    FullSizePhoto,
   },
   setup() {
     const store = useStore();

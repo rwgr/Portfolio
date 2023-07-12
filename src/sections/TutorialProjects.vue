@@ -211,7 +211,7 @@
 <script>
 import { useStore } from "vuex";
 import { computed } from "vue";
-import GithubLogo from "./GithubLogo.vue";
+import GithubLogo from "../components/GithubLogo.vue";
 import { ArrowsPointingOutIcon } from "@heroicons/vue/24/solid";
 
 export default {

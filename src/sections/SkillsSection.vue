@@ -41,7 +41,7 @@ import nextjsLogo from "../assets/learning/nextjs-logo.svg";
 import threejsLogo from "../assets/learning/threejs-logo.svg";
 import tailwindLogo from "../assets/learning/tailwind-logo.svg";
 
-import SkillItem from "./SkillItem.vue";
+import SkillItem from "../components/SkillItem.vue";
 export default {
   components: {
     SkillItem,

@@ -17,9 +17,6 @@ export default {
     skill: String,
     image: String,
   },
-  setup() {
-    return {};
-  },
 };
 </script>
 
