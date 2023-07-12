@@ -67,8 +67,7 @@
             ><LinkIcon class="h-8 infoIcon"
           /></a>
           <span class="mb-2 sm:mb-0">
-            [PARTIALLY] Next.js & React - The Complete Guide (incl. Two
-            Paths!)</span
+            Next.js & React - The Complete Guide (incl. Two Paths!)</span
           >
         </li>
       </ul>

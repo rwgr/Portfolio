@@ -4,7 +4,7 @@ This is my Portfolio, built using JavaScript, HTML, Vue and Tailwind CSS.
 
 The animated background was built using Three.js, it can be enabled via the Sidebar and controlled via the controls that are at the top of the main section.
 
-https://rwgr.netlify.app/
+https://rwgr.dev/
 
 ## Recommended IDE Setup
 

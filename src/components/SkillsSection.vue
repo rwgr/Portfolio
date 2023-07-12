@@ -66,8 +66,8 @@
       />
 
       <div class="mt-2 learning-grid text-xs sm:text-base">React</div>
+      <div class="mt-2 learning-grid text-xs sm:text-base">Next.js</div>
       <div class="mt-2 learning-grid text-xs sm:text-base">Three.js</div>
-      <div class="mt-2 learning-grid text-xs sm:text-base">Vite</div>
       <div class="mt-2 learning-grid text-xs sm:text-base">Tailwind</div>
 
       <img
@@ -77,16 +77,16 @@
         alt="React logo"
       />
       <img
+        src="../assets/learning/nextjs-logo.svg"
+        class="grayscale h-10 sm:h-12 w-10 sm:w-12 justify-self-center learning-grid"
+        title="Next.js"
+        alt="Next.js logo"
+      />
+      <img
         src="../assets/learning/threejs-logo.svg"
         class="grayscale h-10 sm:h-12 w-10 sm:w-12 justify-self-center learning-grid"
         title="Three.js"
         alt="Three.js logo"
-      />
-      <img
-        src="../assets/learning/vitejs-logo.svg"
-        class="grayscale h-10 sm:h-12 w-10 sm:w-12 justify-self-center learning-grid"
-        title="Vite"
-        alt="Vite logo"
       />
       <img
         src="../assets/learning/tailwind-logo.svg"
