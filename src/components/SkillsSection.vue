@@ -7,93 +7,18 @@
       id="intro5"
       class="grid grid-cols-4 gap-y-2 p-1 ml-6 sm:p-4 w-full text-center font-semibold tracking-wide"
     >
-      <div class="learning-grid text-xs sm:text-base pr-1">HTML</div>
-      <div class="learning-grid text-xs sm:text-base pr-1">CSS</div>
-      <div class="learning-grid text-xs sm:text-base pr-1">JavaScript</div>
-      <div class="learning-grid text-xs sm:text-base pl-2">Vue</div>
-      <img
-        src="../assets/learning/html-logo.svg"
-        class="grayscale h-10 sm:h-12 w-10 sm:w-12 justify-self-center learning-grid"
-        title="HTML"
-        alt="HTML logo"
-      />
-      <img
-        src="../assets/learning/css-logo.svg"
-        class="grayscale h-10 sm:h-12 w-10 sm:w-12 justify-self-center learning-grid"
-        title="CSS"
-        alt="CSS logo"
-      />
-      <img
-        src="../assets/learning/javascript-logo.svg"
-        class="grayscale h-10 sm:h-12 w-10 sm:w-12 justify-self-center learning-grid"
-        title="JavaScript"
-        alt="JavaScript logo"
-      />
-      <img
-        src="../assets/learning/vue-logo.svg"
-        class="grayscale h-10 sm:h-12 w-10 sm:w-12 justify-self-center learning-grid"
-        title="Vue"
-        alt="Vue logo"
-      />
-      <div class="mt-2 learning-grid text-xs sm:text-base">Node.js</div>
-      <div class="mt-2 learning-grid text-xs sm:text-base">Express</div>
-      <div class="mt-2 learning-grid text-xs sm:text-base">MongoDB</div>
-
-      <div class="mt-2 learning-grid text-xs sm:text-base">Sass</div>
-      <img
-        src="../assets/learning/nodejs-logo.svg"
-        class="grayscale h-10 sm:h-12 w-10 sm:w-12 justify-self-center learning-grid"
-        title="Node.js"
-        alt="Node.js logo"
-      />
-      <img
-        src="../assets/learning/expressjs-logo.svg"
-        class="grayscale h-10 sm:h-12 w-10 sm:w-12 justify-self-center learning-grid"
-        title="Express.js"
-        alt="Express.js logo"
-      />
-      <img
-        src="../assets/learning/mongodb-logo.svg"
-        class="grayscale h-10 sm:h-12 w-10 sm:w-12 justify-self-center learning-grid"
-        title="MongoDB"
-        alt="MongoDB logo"
-      />
-      <img
-        src="../assets/learning/sass-logo.svg"
-        class="grayscale h-10 sm:h-12 w-10 sm:w-12 justify-self-center learning-grid"
-        title="Sass"
-        alt="Sass logo"
-      />
-
-      <div class="mt-2 learning-grid text-xs sm:text-base">React</div>
-      <div class="mt-2 learning-grid text-xs sm:text-base">Next.js</div>
-      <div class="mt-2 learning-grid text-xs sm:text-base">Three.js</div>
-      <div class="mt-2 learning-grid text-xs sm:text-base">Tailwind</div>
-
-      <img
-        src="../assets/learning/react-logo.svg"
-        class="grayscale h-10 sm:h-12 w-10 sm:w-12 justify-self-center learning-grid"
-        title="React"
-        alt="React logo"
-      />
-      <img
-        src="../assets/learning/nextjs-logo.svg"
-        class="grayscale h-10 sm:h-12 w-10 sm:w-12 justify-self-center learning-grid"
-        title="Next.js"
-        alt="Next.js logo"
-      />
-      <img
-        src="../assets/learning/threejs-logo.svg"
-        class="grayscale h-10 sm:h-12 w-10 sm:w-12 justify-self-center learning-grid"
-        title="Three.js"
-        alt="Three.js logo"
-      />
-      <img
-        src="../assets/learning/tailwind-logo.svg"
-        class="grayscale h-10 sm:h-12 w-10 sm:w-12 justify-self-center learning-grid"
-        title="Tailwind"
-        alt="Tailwind logo"
-      />
+      <SkillItem skill="HTML" :image="htmlLogo" />
+      <SkillItem skill="CSS" :image="cssLogo" />
+      <SkillItem skill="JavaScript" :image="javascriptLogo" />
+      <SkillItem skill="Vue" :image="vueLogo" />
+      <SkillItem skill="NodeJs" :image="nodejsLogo" />
+      <SkillItem skill="ExpressJs" :image="expressjsLogo" />
+      <SkillItem skill="MongoDB" :image="mongodbLogo" />
+      <SkillItem skill="Sass" :image="sassLogo" />
+      <SkillItem skill="React" :image="reactLogo" />
+      <SkillItem skill="NextJs" :image="nextjsLogo" />
+      <SkillItem skill="ThreeJs" :image="threejsLogo" />
+      <SkillItem skill="Tailwind" :image="tailwindLogo" />
     </div>
     <div
       id="border2"
@@ -101,3 +26,41 @@
     ></div>
   </div>
 </template>
+
+<script>
+import htmlLogo from "../assets/learning/html-logo.svg";
+import cssLogo from "../assets/learning/css-logo.svg";
+import javascriptLogo from "../assets/learning/javascript-logo.svg";
+import vueLogo from "../assets/learning/vue-logo.svg";
+import nodejsLogo from "../assets/learning/nodejs-logo.svg";
+import expressjsLogo from "../assets/learning/expressjs-logo.svg";
+import mongodbLogo from "../assets/learning/mongodb-logo.svg";
+import sassLogo from "../assets/learning/sass-logo.svg";
+import reactLogo from "../assets/learning/react-logo.svg";
+import nextjsLogo from "../assets/learning/nextjs-logo.svg";
+import threejsLogo from "../assets/learning/threejs-logo.svg";
+import tailwindLogo from "../assets/learning/tailwind-logo.svg";
+
+import SkillItem from "./SkillItem.vue";
+export default {
+  components: {
+    SkillItem,
+  },
+  setup() {
+    return {
+      htmlLogo,
+      cssLogo,
+      javascriptLogo,
+      vueLogo,
+      nodejsLogo,
+      expressjsLogo,
+      mongodbLogo,
+      sassLogo,
+      reactLogo,
+      nextjsLogo,
+      threejsLogo,
+      tailwindLogo,
+    };
+  },
+};
+</script>
