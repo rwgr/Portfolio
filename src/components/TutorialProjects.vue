@@ -70,7 +70,7 @@
       class="bg-gray-900 p-2 text-slate-100 rounded-b-xl h-fit lg:h-44 text-start main-border text-base"
     >
       <div v-if="activeTutorial === null">
-        <p class="p-2 text-lg">
+        <p class="p-2 text-base">
           Tutorial Projects completed as part of the courses which are listed in
           the completed courses section.
         </p>
