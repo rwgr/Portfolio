@@ -2,8 +2,8 @@ export default {
   bgModeToggle(context) {
     context.commit("bgModeToggle");
   },
-  activateTutorial(context, payload) {
-    context.commit("activateTutorial", payload);
+  activeTutorialHandler(context, payload) {
+    context.commit("activeTutorialHandler", payload);
   },
   positioningToggle(context) {
     context.commit("positioningToggle");

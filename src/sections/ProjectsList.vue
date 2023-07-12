@@ -17,8 +17,8 @@
       prjDemo="https://www.youtube.com/watch?v=xIU1O3Cqcw4"
       prjCode="https://github.com/rwgr/Book-Collection-Manager"
       prjTitle="Book Collection Manager"
-      :prjDesc="prj3Desc"
-      :prjImg="prj3Img"
+      :prjDesc="prj2Desc"
+      :prjImg="prj2Img"
     />
     <ProjectItem
       prjNo="3"
@@ -97,7 +97,7 @@ export default {
       prj4Desc:
         "A basic full stack forum project. Users can sign-up and login allowing them to create posts and leave comments. Users can edit and delete their own posts and comments, change their password and view other users' posts and comments.",
       prj5Desc:
-        "Web application for facilitating contact between coaches advertising their services and their customers. Users can contact any coach via using the in-built messaging system. A user can also register as a coach, and receive messages themselves. (This project is a continuation of a tutorial project completed as part of a Udemy course, with additional features added).",
+        "Web application for facilitating contact between coaches advertising their services and their customers. Users can contact any coach via using the in-built messaging system. A user can also register as a coach, and receive messages themselves. (continued tutorial project,  originally started as part of a Udemy course, with added features).",
       prj6Desc:
         "This portfolio project. Made using Vue, utilising Tailwind CSS for styling and Three.js to create the animated background that can be enabled in the sidebar.",
     };

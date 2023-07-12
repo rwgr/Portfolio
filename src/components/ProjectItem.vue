@@ -98,10 +98,8 @@ export default {
     }
 
     function showFullSize(prjImg) {
-      console.log(prjImg);
       const fullsizeImage = prjImg.replace(/\s/g, "").toLowerCase();
       store.dispatch("showFullSize", fullsizeImage);
-      console.log(fullsizeImage);
     }
 
     function showImageOverlay(e) {

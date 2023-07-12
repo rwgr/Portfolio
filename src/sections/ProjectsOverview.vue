@@ -231,7 +231,6 @@ export default {
     function scrollToElement(e) {
       const no = e.target.closest("li").id.slice(-1);
       const id = "el-project-" + no;
-      console.log(id);
       if (id) {
         document.getElementById(id).scrollIntoView({
           behavior: "smooth",

@@ -26,6 +26,8 @@ import logoExpressjs from "@/assets/learning/expressjs-logo.svg";
 import logoTailwind from "@/assets/learning/tailwind-logo.svg";
 import logoMongodb from "@/assets/learning/mongodb-logo.svg";
 import logoNodejs from "@/assets/learning/nodejs-logo.svg";
+import logoReact from "@/assets/learning/react-logo.svg";
+import logoNextjs from "@/assets/learning/nextjs-logo.svg";
 
 export default {
   components: {},
@@ -78,6 +80,8 @@ export default {
       const sprite6 = textureLoader.load(logoTailwind);
       const sprite7 = textureLoader.load(logoMongodb);
       const sprite8 = textureLoader.load(logoNodejs);
+      const sprite9 = textureLoader.load(logoReact);
+      const sprite10 = textureLoader.load(logoNextjs);
 
       for (let i = 0; i < 10000; i++) {
         const x = 1;
@@ -101,6 +105,8 @@ export default {
         [[0.95, 0.01, 0.5], sprite6, 9],
         [[0.95, 0.01, 0.5], sprite7, 9],
         [[0.95, 0.01, 0.5], sprite8, 9],
+        [[0.8, 0.01, 0.3], sprite9, 9],
+        [[0.75, 0.01, 0.4], sprite10, 9],
       ];
 
       for (let i = 0; i < parameters.length; i++) {

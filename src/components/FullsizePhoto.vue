@@ -61,13 +61,13 @@ export default {
         ? coachFinder
         : showFullSize.value === "portfolio"
         ? portfolio
-        : showFullSize.value === "tutorialcoach"
+        : showFullSize.value === "findacoach"
         ? tutorialCoach
-        : showFullSize.value === "tutorialforkify"
+        : showFullSize.value === "forkify"
         ? tutorialForkify
-        : showFullSize.value === "tutorialnatours"
+        : showFullSize.value === "natours"
         ? tutorialNatours
-        : showFullSize.value === "tutorialomnifood"
+        : showFullSize.value === "omnifood"
         ? tutorialOmnifood
         : null;
     }

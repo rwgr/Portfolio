@@ -2,8 +2,9 @@ export default {
   bgModeToggle(state) {
     state.bgControls = !state.bgControls;
   },
-  activateTutorial(state, payload) {
+  activeTutorialHandler(state, payload) {
     state.activeTutorial = payload;
+    console.log(state.activeTutorial);
   },
   positioningToggle(state) {
     state.positioningState = !state.positioningState;

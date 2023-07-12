@@ -7,7 +7,7 @@ const store = createStore({
   state() {
     return {
       bgControls: false,
-      activeTutorial: null,
+      activeTutorial: "0",
       positioningState: true,
       controlState: true,
       animateState: true,
