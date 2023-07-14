@@ -34,7 +34,7 @@
       v-if="mediaQuerySize"
       class="mt-10 flex flex-col bg-[#318f70] shadow-2xl shadow-gray-900 max-w-[640px]"
     >
-      <div class="flex flex-col gap-10 w-[425px]">
+      <div class="flex flex-col gap-10 w-[400px]">
         <div
           id="main-view"
           class="text-slate-100 flex flex-col items-center grow justify-start transition-all duration-300 ease-linear h-screen relative overflow-y-scroll overflow-x-hidden scrollbar self-start w-[95%]"
@@ -256,9 +256,11 @@ export default {
       }
 
       if (mql) {
-        console.log("remove");
         const skillsSectionSelect = document.querySelector("#intro5");
         skillsSectionSelect.classList.add("mobile-margin");
+
+        // const infoSectionSelect = document.querySelector("#el-myinfo");
+        // infoSectionSelect.classList.add("mobile-padding");
       }
     });
     return { showFullSize, mediaQuerySize };

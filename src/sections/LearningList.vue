@@ -1,6 +1,6 @@
 <template>
   <div
-    class="grid grid-rows-2 justify-center gap-10 text-slate-100 p-8 font-semibold bg-[#162234] max-h-[350px] w-full rounded-t-xl -mt-8 border-t-2 border-[#318f70] hide-el text-sm"
+    class="grid grid-rows-2 justify-center text-slate-100 p-8 font-semibold bg-[#162234] max-h-[350px] w-full rounded-t-xl -mt-8 border-t-2 border-[#318f70] text-sm"
     id="el-learning"
   >
     <div class="divide-y-4 divide-[#318f70] -mt-4">

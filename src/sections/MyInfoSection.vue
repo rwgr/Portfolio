@@ -1,6 +1,6 @@
 <template>
   <div
-    class="flex flex-col gap-5 justify-items-center bg-[#1d2d40] text-slate-100 p-8 font-semibold dark:bg-gray-800 hide-el text-sm sm:text-base"
+    class="flex flex-col gap-5 justify-items-center bg-[#1d2d40] text-slate-100 font-semibold dark:bg-gray-800 hide-el text-sm sm:text-base pl-4 pr-4 py-8"
     id="el-myinfo"
   >
     <div class="flex gap-6">

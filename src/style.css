@@ -158,8 +158,13 @@
     @apply overflow-scroll overflow-x-hidden md:overflow-auto scrollbar-learning;
   }
 
+  /* Mobile styles, added onMount via HomeView */
   .mobile-margin {
     @apply ml-0 mr-0;
+  }
+
+  .mobile-padding {
+    @apply p-2;
   }
 
   .show {
