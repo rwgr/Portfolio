@@ -135,7 +135,7 @@
     </ul>
     <div
       id="border3"
-      class="border-b-2 border-slate-100 ml-10 -mr-1 ms:ml-0 sm:mr-10 w-56 sm:w-full"
+      class="border-b-2 border-slate-100 ml-10 sm:ml-0 -mr-1 sm:mr-4 w-56 sm:w-full"
     ></div>
   </div>
 </template>

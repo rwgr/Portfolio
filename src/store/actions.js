@@ -32,4 +32,7 @@ export default {
   closeFullSize(context) {
     context.commit("closeFullSize");
   },
+  setMediaQuerySize(context, payload) {
+    context.commit("setMediaQuerySize", payload);
+  },
 };

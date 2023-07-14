@@ -1,7 +1,8 @@
 <template>
-  <main class="flex-grow w-full">
+  <main class="flex-grow w-full min-w-[33.5em]">
     <div
       class="grid grid-cols-11 mt-10 max-h-fit gap-4 bg-[#318f70] mx-auto max-w-3xl min-w-3xl sm:max-w-5xl sm:min-w-5xl shadow-2xl shadow-gray-900"
+      v-if="!mediaQuerySize"
     >
       <side-bar />
       <div class="col-span-5 flex flex-col gap-10 justify-center min-h-full">
@@ -21,6 +22,32 @@
       <div class="col-span-5 -ml-4">
         <MyInfoSection />
         <LearningList />
+      </div>
+      <transition name="fade" appear>
+        <FullSizePhoto
+          class="transition-all ease-out duration-700"
+          v-if="showFullSize"
+        />
+      </transition>
+    </div>
+    <div
+      v-if="mediaQuerySize"
+      class="grid grid-cols-6 mt-10 max-h-fit bg-[#318f70] mx-auto max-w-3xl min-w-3xl sm:max-w-5xl sm:min-w-5xl shadow-2xl shadow-gray-900"
+    >
+      <side-bar />
+      <div class="col-span-5 flex flex-col gap-10 justify-center">
+        <div
+          id="main-view"
+          class="text-slate-100 flex flex-col items-center grow justify-start transition-all duration-300 ease-linear h-screen -ml-6 relative overflow-y-scroll overflow-x-hidden scrollbar"
+        >
+          <MyInfoSection />
+          <LearningList />
+          <SkillsSection />
+          <ProjectsOverview />
+          <ProjectsList />
+          <TutorialProjects />
+          <ContactSection />
+        </div>
       </div>
       <transition name="fade" appear>
         <FullSizePhoto
@@ -68,28 +95,17 @@ export default {
   setup() {
     const store = useStore();
     const showFullSize = computed(() => store.getters.getShowFullSize);
+    const mediaQuerySize = computed(() => store.getters.getMediaQuerySize);
+
+    // less than 600px use a 400px-wide mobile-like layout.
+    // 600px and 999px use a 600px-wide tablet-like layout.
+    // Greater than 1,000px use a 1000px-wide desktop-like layout.
 
     // Main view start animation
     async function appear() {
       try {
         const tl = gsap.timeline();
         gsap.registerPlugin(ScrollTrigger);
-
-        // gsap.to("#intro9", {
-        //   scrollTrigger: {
-        //     trigger: "#intro9",
-        //     start: "end center",
-        //     scroller: "#main-view",
-        //     toggleActions: "none play none none",
-        //     onLeave: () => {
-        //       const contact = document.querySelector("#intro-contact");
-        //       contact.classList.remove("opacity-0");
-        //     },
-        //   },
-        //   duration: 1,
-        //   opacity: 0,
-        //   x: 150,
-        // });
 
         tl.from("#intro1", {
           duration: 2,
@@ -212,21 +228,6 @@ export default {
           "-=1.5"
         );
 
-        // tl.from(
-        //   "#intro9",
-        //   {
-        //     duration: 1,
-        //     opacity: 0,
-        //     ease: "power3",
-        //     onComplete: () => {
-        //       const main = document.querySelector("#main-view");
-        //       main.classList.remove("overflow-y-hidden");
-        //       main.classList.add("overflow-y-scroll");
-        //     },
-        //   },
-        //   "-=1"
-        // );
-
         tl.from(
           "#el-sidebar",
           {
@@ -237,12 +238,6 @@ export default {
           },
           "-=1.5"
         );
-
-        // tl.to("#intro9", {
-        //   duration: 4,
-        //   opacity: 0,
-        //   ease: "slow.out",
-        // });
       } catch (err) {
         console.err(err);
         alert(err, "Please try again");
@@ -251,22 +246,17 @@ export default {
 
     onMounted(() => {
       appear();
+
+      // Media query to render app for mobile sizes, 640px same as tailwind "sm"
+      let mql = window.matchMedia("(max-width: 640px)").matches;
+      store.dispatch("setMediaQuerySize", mql);
+
+      if (!mql) {
+        const learningListSelect = document.querySelector("#el-learning");
+        learningListSelect.classList.add("learning-scrollbar");
+      }
     });
-    return { showFullSize };
+    return { showFullSize, mediaQuerySize };
   },
 };
 </script>
-
-<style scroped>
-::-webkit-scrollbar {
-  width: 0.2rem;
-}
-
-::-webkit-scrollbar-track {
-  background: #383838;
-}
-
-::-webkit-scrollbar-thumb {
-  background: white;
-}
-</style>

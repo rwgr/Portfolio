@@ -19,7 +19,7 @@
       <TutorialItem tutNo="4" tutTitle="Omnifood" :tutImg="imgOmni" />
     </div>
     <div
-      class="bg-gray-900 p-2 text-slate-100 rounded-b-xl h-fit lg:h-44 text-start main-border text-base"
+      class="bg-gray-900 p-2 text-slate-100 rounded-b-xl h-fit lg:h-44 sm: text-start main-border text-base"
     >
       <TutorialDetails
         tutNo="0"

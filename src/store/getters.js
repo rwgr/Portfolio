@@ -26,4 +26,7 @@ export default {
   getShowFullSize(state) {
     return state.showFullSize;
   },
+  getMediaQuerySize(state) {
+    return state.mediaQuerySize;
+  },
 };

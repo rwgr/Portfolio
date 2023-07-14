@@ -4,7 +4,6 @@ export default {
   },
   activeTutorialHandler(state, payload) {
     state.activeTutorial = payload;
-    console.log(state.activeTutorial);
   },
   positioningToggle(state) {
     state.positioningState = !state.positioningState;
@@ -32,5 +31,8 @@ export default {
   },
   closeFullSize(state) {
     state.showFullSize = null;
+  },
+  setMediaQuerySize(state, payload) {
+    state.mediaQuerySize = payload;
   },
 };

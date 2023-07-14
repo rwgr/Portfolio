@@ -130,8 +130,32 @@
     @apply opacity-100;
   }
 
+  /* Scrollbars */
+
+  ::-webkit-scrollbar {
+    width: 0.5rem;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #318f70;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #f1f5f9;
+  }
+
   .scrollbar {
     scrollbar-width: thin;
+    scrollbar-color: #f1f5f9 #318f70;
+  }
+
+  .scrollbar-learning {
+    scrollbar-width: thin;
+    scrollbar-color: #f1f5f9 #162234;
+  }
+
+  .learning-scrollbar {
+    @apply overflow-scroll overflow-x-hidden md:overflow-auto scrollbar-learning;
   }
 
   .show {

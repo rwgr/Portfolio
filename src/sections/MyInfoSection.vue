@@ -30,7 +30,7 @@
           </li>
         </ul>
       </div>
-      <div class="flex justify-center w-full items-center invisible md:visible">
+      <div class="flex justify-center w-full items-center invisible lg:visible">
         <img
           src="/avatar.webp"
           alt="Robin avatar"
