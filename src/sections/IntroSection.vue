@@ -12,7 +12,7 @@
     >
       I'm Robin, a Web Developer.
     </div>
-    <div
+    <!-- <div
       id="intro9"
       class="gap-2 flex font-semibold self-center items-center text-[#162234] pointer-events-none -mt-10 py-2 flex-col lg:flex-row mb-4 lg:mb-0"
     >
@@ -32,7 +32,7 @@
       <ArrowRightCircleIcon class="h-7 opacity-0 md:opacity-100" />
       <div>Please feel free to contact me via email</div>
       <ArrowRightCircleIcon class="h-10 md:h-7" />
-    </div>
+    </div> -->
 
     <div
       id="border1"

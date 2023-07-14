@@ -7,7 +7,7 @@
       <div class="col-span-5 flex flex-col gap-10 justify-center min-h-full">
         <div
           id="main-view"
-          class="text-slate-100 flex flex-col items-center grow justify-start transition-all duration-300 ease-linear overflow-y-hidden overflow-x-hidden h-96 -ml-6 relative"
+          class="text-slate-100 flex flex-col items-center grow justify-start transition-all duration-300 ease-linear h-96 -ml-6 relative overflow-y-scroll overflow-x-hidden scrollbar"
         >
           <BackgroundControls />
           <IntroSection />
@@ -75,21 +75,21 @@ export default {
         const tl = gsap.timeline();
         gsap.registerPlugin(ScrollTrigger);
 
-        gsap.to("#intro9", {
-          scrollTrigger: {
-            trigger: "#intro9",
-            start: "end center",
-            scroller: "#main-view",
-            toggleActions: "none play none none",
-            onLeave: () => {
-              const contact = document.querySelector("#intro-contact");
-              contact.classList.remove("opacity-0");
-            },
-          },
-          duration: 1,
-          opacity: 0,
-          x: 150,
-        });
+        // gsap.to("#intro9", {
+        //   scrollTrigger: {
+        //     trigger: "#intro9",
+        //     start: "end center",
+        //     scroller: "#main-view",
+        //     toggleActions: "none play none none",
+        //     onLeave: () => {
+        //       const contact = document.querySelector("#intro-contact");
+        //       contact.classList.remove("opacity-0");
+        //     },
+        //   },
+        //   duration: 1,
+        //   opacity: 0,
+        //   x: 150,
+        // });
 
         tl.from("#intro1", {
           duration: 2,
@@ -203,24 +203,29 @@ export default {
             duration: 1,
             y: -30,
             ease: "power1",
-          },
-          "-=1.5"
-        );
-
-        tl.from(
-          "#intro9",
-          {
-            duration: 1,
-            opacity: 0,
-            ease: "power3",
             onComplete: () => {
               const main = document.querySelector("#main-view");
               main.classList.remove("overflow-y-hidden");
               main.classList.add("overflow-y-scroll");
             },
           },
-          "-=1"
+          "-=1.5"
         );
+
+        // tl.from(
+        //   "#intro9",
+        //   {
+        //     duration: 1,
+        //     opacity: 0,
+        //     ease: "power3",
+        //     onComplete: () => {
+        //       const main = document.querySelector("#main-view");
+        //       main.classList.remove("overflow-y-hidden");
+        //       main.classList.add("overflow-y-scroll");
+        //     },
+        //   },
+        //   "-=1"
+        // );
 
         tl.from(
           "#el-sidebar",
@@ -233,11 +238,11 @@ export default {
           "-=1.5"
         );
 
-        tl.to("#intro9", {
-          duration: 4,
-          opacity: 0,
-          ease: "slow.out",
-        });
+        // tl.to("#intro9", {
+        //   duration: 4,
+        //   opacity: 0,
+        //   ease: "slow.out",
+        // });
       } catch (err) {
         console.err(err);
         alert(err, "Please try again");

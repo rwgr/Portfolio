@@ -130,6 +130,10 @@
     @apply opacity-100;
   }
 
+  .scrollbar {
+    scrollbar-width: thin;
+  }
+
   .show {
     opacity: 100;
   }
