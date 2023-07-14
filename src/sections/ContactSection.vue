@@ -32,6 +32,10 @@ export default {
     EnvelopeIcon,
   },
   setup() {
+    // templateId: template_vfpvbac
+    // serviceId: service_29qoj39
+    // publickey: Ln9TeMFt0mDbjdVSH
+
     function copyEmail() {
       let email = document.getElementById("email").textContent;
       navigator.clipboard.writeText(email);

@@ -11,7 +11,7 @@
       </div>
     </div>
     <div
-      class="grid grid-cols-1 sm:grid-cols-2 justify-items-center gap-4 bg-[#1d2d40] justify-evenly items-center p-4 text-slate-100"
+      class="grid grid-cols-1 sm:grid-cols-2 justify-items-center gap-4 bg-[#318f70] justify-evenly items-center p-4 text-slate-100"
     >
       <TutorialItem tutNo="1" tutTitle="Find A Coach" :tutImg="imgCoach" />
       <TutorialItem tutNo="2" tutTitle="Natours" :tutImg="imgNatours" />

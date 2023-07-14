@@ -4,7 +4,7 @@
     :class="activeTutorial === tutNo ? 'activeContainer' : 'notActiveContainer'"
     @click.prevent="activeTutorialHandler(tutNo)"
   >
-    <h3 class="text-center font-semibold">{{ tutTitle }}</h3>
+    <h3 class="text-center text-lg font-semibold">{{ tutTitle }}</h3>
     <img
       :src="tutImg"
       :alt="`${tutTitle} tutorial screenshot`"

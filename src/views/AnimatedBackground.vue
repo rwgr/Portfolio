@@ -83,7 +83,7 @@ export default {
       const sprite9 = textureLoader.load(logoReact);
       const sprite10 = textureLoader.load(logoNextjs);
 
-      for (let i = 0; i < 10000; i++) {
+      for (let i = 0; i < 100; i++) {
         const x = 1;
         const y = 1;
         const z = 1;
@@ -97,16 +97,16 @@ export default {
       );
 
       parameters = [
-        [[0.95, 0.01, 0.5], sprite2, 9],
-        [[0.95, 0.01, 0.5], sprite3, 9],
-        [[0.95, 0.01, 0.55], sprite1, 9],
-        [[0.95, 0.01, 0.5], sprite5, 9],
-        [[0.95, 0.01, 0.5], sprite4, 9],
-        [[0.95, 0.01, 0.5], sprite6, 9],
-        [[0.95, 0.01, 0.5], sprite7, 9],
-        [[0.95, 0.01, 0.5], sprite8, 9],
-        [[0.8, 0.01, 0.3], sprite9, 9],
-        [[0.75, 0.01, 0.4], sprite10, 9],
+        [[1, 0.01, 0.5], sprite1, 9],
+        [[1, 0.01, 0.5], sprite2, 9],
+        [[1, 0.01, 0.5], sprite3, 9],
+        [[1, 0.01, 0.5], sprite4, 9],
+        [[1, 0.01, 0.5], sprite5, 9],
+        [[1, 0.01, 0.5], sprite6, 9],
+        [[1, 0.01, 0.5], sprite7, 9],
+        [[1, 0.01, 0.5], sprite8, 9],
+        [[1, 0.01, 0.3], sprite9, 9],
+        [[1, 0.01, 0.4], sprite10, 9],
       ];
 
       for (let i = 0; i < parameters.length; i++) {
