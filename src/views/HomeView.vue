@@ -1,7 +1,7 @@
 <template>
   <main class="flex-grow w-full">
     <div
-      class="grid grid-cols-11 mt-10 max-h-fit gap-4 bg-gradient-to-b from-[#406f4a] via-[#3c7045] to-[#133a33] mx-auto max-w-3xl min-w-3xl sm:max-w-5xl sm:min-w-5xl shadow-2xl shadow-gray-900 sm:bg-black"
+      class="grid grid-cols-11 mt-10 max-h-fit gap-4 bg-[#318f70] mx-auto max-w-3xl min-w-3xl sm:max-w-5xl sm:min-w-5xl shadow-2xl shadow-gray-900"
     >
       <side-bar />
       <div class="col-span-5 flex flex-col gap-10 justify-center min-h-full">

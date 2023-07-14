@@ -131,7 +131,12 @@ export default {
 
         scene.add(particles);
 
-        const colourBackground = new THREE.Color("#3c7045");
+        const backgroundTexture = new THREE.TextureLoader().load(
+          "/gradient.png"
+        );
+
+        // const colourBackground = new THREE.Color("#3c7045");
+        const colourBackground = backgroundTexture;
         scene.background = colourBackground;
       }
 
