@@ -1,11 +1,11 @@
 <template>
   <div
-    class="grid grid-rows-2 justify-center gap-10 text-slate-100 p-8 font-semibold bg-[#162234] max-h-[300px] md:max-h-[350px] rounded-t-xl -mt-8 border-t-2 border-[#155b26] hide-el text-xs sm:text-sm overflow-scroll overflow-x-hidden md:overflow-auto"
+    class="grid grid-rows-2 justify-center gap-10 text-slate-100 p-8 font-semibold bg-[#162234] max-h-[300px] md:max-h-[350px] rounded-t-xl -mt-8 border-t-2 border-[#318f70] hide-el text-xs sm:text-sm overflow-scroll overflow-x-hidden md:overflow-auto"
     id="el-learning"
   >
-    <div class="divide-y-4 divide-[#155b26] -mt-4">
+    <div class="divide-y-4 divide-[#318f70] -mt-4">
       <div
-        class="text-md font-sm uppercase font-bold tracking-wider text-right text-[#155b26] pointer-events-none"
+        class="text-md font-sm uppercase font-bold tracking-wider text-right text-[#318f70] pointer-events-none"
       >
         Completed courses
       </div>
