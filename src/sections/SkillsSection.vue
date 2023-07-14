@@ -5,7 +5,7 @@
     </div>
     <div
       id="intro5"
-      class="grid grid-cols-4 gap-y-2 p-1 ml-6 sm:p-4 w-full text-center font-semibold tracking-wide"
+      class="grid grid-cols-4 gap-y-2 p-1 sm:p-4 w-full text-center font-semibold tracking-wide ml-6"
     >
       <SkillItem skill="HTML" :image="htmlLogo" />
       <SkillItem skill="CSS" :image="cssLogo" />

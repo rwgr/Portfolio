@@ -30,7 +30,18 @@
           </li>
         </ul>
       </div>
-      <div class="flex justify-center w-full items-center invisible lg:visible">
+      <div class="flex justify-center w-full items-center" v-if="mediaQuery">
+        <img
+          src="/avatar.webp"
+          alt="Robin avatar"
+          title="Robin avatar"
+          class="rounded-full border-2 border-slate-100 w-28 h-28 object-contain"
+        />
+      </div>
+      <div
+        class="flex justify-center w-full items-center invisible lg:visible"
+        v-else
+      >
         <img
           src="/avatar.webp"
           alt="Robin avatar"
@@ -68,6 +79,9 @@ import { MapPinIcon } from "@heroicons/vue/24/solid";
 import GithubLogo from "../components/GithubLogo.vue";
 
 export default {
+  props: {
+    mediaQuery: String,
+  },
   components: {
     EnvelopeIcon,
     UserCircleIcon,

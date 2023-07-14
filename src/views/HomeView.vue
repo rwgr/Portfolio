@@ -1,5 +1,5 @@
 <template>
-  <main class="flex-grow w-full min-w-[33.5em]">
+  <main class="flex flex-grow w-full min-w-[33.5em]">
     <div
       class="grid grid-cols-11 mt-10 max-h-fit gap-4 bg-[#318f70] mx-auto max-w-3xl min-w-3xl sm:max-w-5xl sm:min-w-5xl shadow-2xl shadow-gray-900"
       v-if="!mediaQuerySize"
@@ -32,15 +32,14 @@
     </div>
     <div
       v-if="mediaQuerySize"
-      class="grid grid-cols-6 mt-10 max-h-fit bg-[#318f70] mx-auto max-w-3xl min-w-3xl sm:max-w-5xl sm:min-w-5xl shadow-2xl shadow-gray-900"
+      class="mt-10 flex flex-col bg-[#318f70] shadow-2xl shadow-gray-900 max-w-[640px]"
     >
-      <side-bar />
-      <div class="col-span-5 flex flex-col gap-10 justify-center">
+      <div class="flex flex-col gap-10 w-[425px]">
         <div
           id="main-view"
-          class="text-slate-100 flex flex-col items-center grow justify-start transition-all duration-300 ease-linear h-screen -ml-6 relative overflow-y-scroll overflow-x-hidden scrollbar"
+          class="text-slate-100 flex flex-col items-center grow justify-start transition-all duration-300 ease-linear h-screen relative overflow-y-scroll overflow-x-hidden scrollbar self-start w-[95%]"
         >
-          <MyInfoSection />
+          <MyInfoSection mediaQuery="mediaQuerySize" />
           <LearningList />
           <SkillsSection />
           <ProjectsOverview />
@@ -254,6 +253,12 @@ export default {
       if (!mql) {
         const learningListSelect = document.querySelector("#el-learning");
         learningListSelect.classList.add("learning-scrollbar");
+      }
+
+      if (mql) {
+        console.log("remove");
+        const skillsSectionSelect = document.querySelector("#intro5");
+        skillsSectionSelect.classList.add("mobile-margin");
       }
     });
     return { showFullSize, mediaQuerySize };
