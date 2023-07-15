@@ -41,11 +41,11 @@
         >
           <MyInfoSection mediaQuery="mediaQuerySize" />
           <LearningList />
-          <SkillsSection />
-          <ProjectsOverview />
+          <SkillsSection class="-ml-6" />
+          <ProjectsOverview class="-ml-6" />
           <ProjectsList />
-          <TutorialProjects />
-          <ContactSection />
+          <TutorialProjects class="-ml-6" />
+          <ContactSection class="-ml-6" />
         </div>
       </div>
       <transition name="fade" appear>

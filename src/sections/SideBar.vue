@@ -169,6 +169,7 @@ export default {
     const positioningState = computed(() => store.getters.getPositioningState);
     const controlState = computed(() => store.getters.getControlState);
     const animateState = computed(() => store.getters.getAnimateState);
+    
 
     function bgModeToggle(toggle) {
       store.dispatch("bgModeToggle", toggle);

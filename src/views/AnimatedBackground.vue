@@ -16,7 +16,7 @@ import { AfterimagePass } from "three/addons/postprocessing/AfterimagePass.js";
 import { BokehPass } from "three/addons/postprocessing/BokehPass.js";
 
 import { useStore } from "vuex";
-import { computed } from "vue";
+import { computed, watch } from "vue";
 
 import logoJavascript from "@/assets/learning/javascript-logo.svg";
 import logoCss from "@/assets/learning/css-logo.svg";
@@ -39,13 +39,13 @@ export default {
     const animateState = computed(() => store.getters.getAnimateState);
     const resetPositioning = computed(() => store.getters.getResetPositioning);
     const postProcessing = computed(() => store.getters.getPostProcessing);
+    const animationActive = computed(() => store.getters.getAnimationActive);
 
     let camera = ref(null);
     let scene = ref(null);
     let renderer = ref(null);
     let parameters = ref(null);
     let materials = ref([]);
-    let particles = ref(null);
     let geometry = ref(null);
     let composer = ref(null);
     let afterimagePass = ref(null);
@@ -56,7 +56,27 @@ export default {
     let windowHalfX = window.innerWidth / 2;
     let windowHalfY = window.innerHeight / 2;
 
+    watch(animationActive, (newValue, oldValue) => {
+      if (newValue === false) {
+        stopAnimation();
+        return;
+      }
+
+      const canvas = document.querySelector("canvas");
+      if (canvas) {
+        canvas.classList.add("visible");
+        canvas.classList.remove("invisible");
+      }
+
+      init();
+      animate();
+    });
+
     function init() {
+      if (!animationActive.value) {
+        return;
+      }
+
       camera = new THREE.PerspectiveCamera(
         50,
         window.innerWidth / window.innerHeight,
@@ -140,12 +160,19 @@ export default {
         scene.background = colourBackground;
       }
 
-      //
+      // if canvas already exists, animation started and then stopped, then should just add rendered to existing canvas, else generate a new one and add to DOM
+      const canvas = document.querySelector("canvas");
+      if (canvas) {
+        renderer = new THREE.WebGLRenderer({ canvas });
+        renderer.setPixelRatio(window.devicePixelRatio);
+        renderer.setSize(window.innerWidth, window.innerHeight);
+      } else {
+        renderer = new THREE.WebGLRenderer();
+        renderer.setPixelRatio(window.devicePixelRatio);
+        renderer.setSize(window.innerWidth, window.innerHeight);
 
-      renderer = new THREE.WebGLRenderer();
-      renderer.setPixelRatio(window.devicePixelRatio);
-      renderer.setSize(window.innerWidth, window.innerHeight);
-      document.body.appendChild(renderer.domElement);
+        document.body.appendChild(renderer.domElement);
+      }
 
       // postprocessing
 
@@ -159,6 +186,9 @@ export default {
     }
 
     function onWindowResize() {
+      if (!animationActive.value) {
+        return;
+      }
       windowHalfX = window.innerWidth / 2;
       windowHalfY = window.innerHeight / 2;
 
@@ -192,10 +222,24 @@ export default {
     }
 
     function animate() {
+      if (!animationActive.value) {
+        return;
+      }
       requestAnimationFrame(animate);
 
       render();
-      // stats.update();
+    }
+
+    function stopAnimation() {
+      const animationFrameId = requestAnimationFrame(animate);
+      cancelAnimationFrame(animationFrameId);
+      // renderer.dispose();
+      // composer.dispose();
+      // geometry.dispose();
+
+      const canvas = document.querySelector("canvas");
+      canvas.classList.add("invisible");
+      canvas.classList.remove("visible");
     }
 
     function render() {

@@ -12,32 +12,12 @@
       <ul class="flex flex-col justify-between">
         <li class="flex gap-2 mt-5">
           <a
-            href="https://www.udemy.com/course/design-and-develop-a-killer-website-with-html5-and-css3/"
+            href="https://www.udemy.com/course/nextjs-react-the-complete-guide/"
             target="_blank"
             ><LinkIcon class="h-8 infoIcon"
           /></a>
-          <span class="self-center"
-            >Build Responsive Real-World Websites with HTML and CSS</span
-          >
-        </li>
-        <li class="flex gap-2 mt-2">
-          <a
-            href="https://www.udemy.com/course/advanced-css-and-sass/"
-            target="_blank"
-            ><LinkIcon class="h-8 infoIcon"
-          /></a>
-          <span>
-            Advanced CSS and Sass: Flexbox, Grid, Animations and More!</span
-          >
-        </li>
-        <li class="flex gap-2 mt-2">
-          <a
-            href="https://www.udemy.com/course/the-complete-javascript-course/"
-            target="_blank"
-            ><LinkIcon class="h-8 infoIcon"
-          /></a>
-          <span>
-            The Complete JavaScript Course 2023: From Zero to Expert!</span
+          <span class="self-center">
+            Next.js & React - The Complete Guide (incl. Two Paths!)</span
           >
         </li>
         <li class="flex gap-2 mt-2">
@@ -62,12 +42,32 @@
         </li>
         <li class="flex gap-2 mt-2">
           <a
-            href="https://www.udemy.com/course/nextjs-react-the-complete-guide/"
+            href="https://www.udemy.com/course/the-complete-javascript-course/"
+            target="_blank"
+            ><LinkIcon class="h-8 infoIcon"
+          /></a>
+          <span>
+            The Complete JavaScript Course 2023: From Zero to Expert!</span
+          >
+        </li>
+        <li class="flex gap-2 mt-2">
+          <a
+            href="https://www.udemy.com/course/design-and-develop-a-killer-website-with-html5-and-css3/"
+            target="_blank"
+            ><LinkIcon class="h-8 infoIcon"
+          /></a>
+          <span class="self-center"
+            >Build Responsive Real-World Websites with HTML and CSS</span
+          >
+        </li>
+        <li class="flex gap-2 mt-2">
+          <a
+            href="https://www.udemy.com/course/advanced-css-and-sass/"
             target="_blank"
             ><LinkIcon class="h-8 infoIcon"
           /></a>
           <span class="mb-2 sm:mb-0">
-            Next.js & React - The Complete Guide (incl. Two Paths!)</span
+            Advanced CSS and Sass: Flexbox, Grid, Animations and More!</span
           >
         </li>
       </ul>

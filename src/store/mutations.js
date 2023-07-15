@@ -1,6 +1,8 @@
 export default {
   bgModeToggle(state) {
     state.bgControls = !state.bgControls;
+    state.animationActive = !state.animationActive;
+    console.log(state.animationActive);
   },
   activeTutorialHandler(state, payload) {
     state.activeTutorial = payload;

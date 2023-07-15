@@ -29,4 +29,7 @@ export default {
   getMediaQuerySize(state) {
     return state.mediaQuerySize;
   },
+  getAnimationActive(state) {
+    return state.animationActive;
+  },
 };
